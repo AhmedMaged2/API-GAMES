@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAME REVIEWS</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="loadingScreen" class="loading-overlay d-none">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div class="container my-5 title">
+    <div class="custom-navbar p-3 rounded-pill d-flex justify-content-between align-items-center flex-wrap shadow">
+      <h5 class="text-white mb-0">
+        <i class="fa-solid fa-gamepad me-2"></i> GAME REVIEWS
+      </h5>
+      <nav class="navs w-100 mt-3 mt-lg-0">
+        <div class="d-flex justify-content-end d-lg-none">
+          <button id="toggleMenu" class="btn btn-outline-light btn-sm">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="d-flex flex-wrap gap-2 justify-content-center mt-2 mt-lg-0 d-none d-lg-flex" id="categoryList">
+          <button class="btn btn-sm btn-outline-light category-btn active" data-category="mmorpg">MMORPG</button>
+          <button class="btn btn-sm btn-outline-light category-btn" data-category="shooter">SHOOTER</button>
+          <button class="btn btn-sm btn-outline-light category-btn" data-category="sailing">SAILING</button>
+          <button class="btn btn-sm btn-outline-light category-btn" data-category="permadeath">PERMADEATH</button>
+          <button class="btn btn-sm btn-outline-light category-btn" data-category="superhero">SUPERHERO</button>
+          <button class="btn btn-sm btn-outline-light category-btn" data-category="pixel">PIXEL</button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div id="gameList" class="row g-4"></div>
+    <div id="gameDetails" class="d-none my-5"></div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
