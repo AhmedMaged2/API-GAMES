@@ -1,4 +1,4 @@
-import { UI } from "./UI.js";
+import { UI } from "./ui.js";
 const ui = new UI();
 
 let allgames = [];
